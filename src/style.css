@@ -1,0 +1,120 @@
+@import "@visuallyjs/browser-ui/css/visuallyjs.css";
+
+.vjs-list-manager {
+    width:100%;
+    height:70vh;
+    position:relative;
+    outline:1px solid;
+}
+
+
+.vjs-lm-group {
+    background-color: #fcfcfc;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #3b82f6;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Inter, sans-serif;
+    max-height: 450px;
+}
+
+.vjs-lm-group-header {
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vjs-lm-group-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #64748b;
+    letter-spacing: 0.05em;
+}
+
+.vjs-lm-group-title-accent {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+}
+
+.vjs-lm-group-content {
+    overflow-y: auto;
+    width: 100%;
+    padding: 4px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.vjs-node {
+    background-color: #ffffff;
+}
+
+.vjs-lm-node {
+    padding: 0 12px;
+    width: 240px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #f1f5f9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    transition: all 0.15s ease-in-out;
+    cursor: crosshair;
+}
+
+.vjs-lm-node:hover {
+    border-color: #3b82f6;
+}
+
+.vjs-lm-node-label {
+    font-weight: 500;
+    color: #334155;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vjs-lm-node-icon {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.vjs-lm-node-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.vjs-lm-node-type {
+    font-size: 8px;
+    font-weight: 700;
+    color: #94a3b8;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    text-transform: uppercase;
+}
+
+.vjs-drag-hover {
+    background-color: #e0f2fe !important;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 1px #0ea5e9;
+}
+
+.vjs-connected  {
+    background-color: #f0f0f0;
+}
+

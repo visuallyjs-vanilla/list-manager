@@ -1,0 +1,56 @@
+{
+  "groups": [
+    {
+      "id": "g1",
+      "type": "list",
+      "left": 50,
+      "top": 50,
+      "label": "Source: Shopify API"
+    },
+    {
+      "id": "g2",
+      "type": "list",
+      "left": 480,
+      "top": 50,
+      "label": "Target: Salesforce CRM"
+    }
+  ],
+  "nodes": [
+    {"id": "s1", "group": "g1", "label": "customer_id", "type": "string", "icon": "🆔"},
+    {"id": "s2", "group": "g1", "label": "email", "type": "string", "icon": "✉️"},
+    {"id": "s3", "group": "g1", "label": "first_name", "type": "string", "icon": "👤"},
+    {"id": "s4", "group": "g1", "label": "last_name", "type": "string", "icon": "👤"},
+    {"id": "s5", "group": "g1", "label": "phone", "type": "phone", "icon": "📞"},
+    {"id": "s6", "group": "g1", "label": "total_spent", "type": "decimal", "icon": "💰"},
+    {"id": "s7", "group": "g1", "label": "orders_count", "type": "int", "icon": "📦"},
+    {"id": "s8", "group": "g1", "label": "last_order_date", "type": "date", "icon": "🗓️"},
+    {"id": "s10", "group": "g1", "label": "accepts_marketing", "type": "boolean", "icon": "📣"},
+    {"id": "s11", "group": "g1", "label": "province", "type": "string", "icon": "📍"},
+    {"id": "s12", "group": "g1", "label": "country", "type": "string", "icon": "🌎"},
+    {"id": "s13", "group": "g1", "label": "zip", "type": "string", "icon": "📮"},
+    {"id": "s14", "group": "g1", "label": "city", "type": "string", "icon": "🏙️"},
+    {"id": "s15", "group": "g1", "label": "address1", "type": "string", "icon": "🏠"},
+    {"id": "s16", "group": "g1", "label": "tags", "type": "string", "icon": "🏷️"},
+
+    {"id": "t1", "group": "g2", "label": "External_ID__c", "type": "string", "icon": "🔗"},
+    {"id": "t2", "group": "g2", "label": "Email", "type": "email", "icon": "✉️"},
+    {"id": "t3", "group": "g2", "label": "FirstName", "type": "string", "icon": "👤"},
+    {"id": "t4", "group": "g2", "label": "LastName", "type": "string", "icon": "👤"},
+    {"id": "t5", "group": "g2", "label": "Phone", "type": "phone", "icon": "📞"},
+    {"id": "t6", "group": "g2", "label": "Lifetime_Value__c", "type": "decimal", "icon": "💎"},
+    {"id": "t7", "group": "g2", "label": "Loyalty_Tier__c", "type": "picklist", "icon": "👑"},
+    {"id": "t9", "group": "g2", "label": "HasOptedOutOfEmail", "type": "boolean", "icon": "🚫"},
+    {"id": "t10", "group": "g2", "label": "Description", "type": "textarea", "icon": "📝"},
+    {"id": "t11", "group": "g2", "label": "MailingState", "type": "string", "icon": "📍"},
+    {"id": "t12", "group": "g2", "label": "MailingCountry", "type": "string", "icon": "🌎"},
+    {"id": "t13", "group": "g2", "label": "MailingPostalCode", "type": "string", "icon": "📮"},
+    {"id": "t14", "group": "g2", "label": "MailingCity", "type": "string", "icon": "🏙️"},
+    {"id": "t15", "group": "g2", "label": "MailingStreet", "type": "string", "icon": "🏠"},
+    {"id": "t16", "group": "g2", "label": "Customer_Tags__c", "type": "string", "icon": "🏷️"}
+  ],
+  "edges": [
+    { "source":"s1", "target":"t1" },
+    { "source":"s2", "target":"t2" },
+    { "source":"s6", "target":"t6" }
+  ]
+}
