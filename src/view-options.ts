@@ -33,7 +33,7 @@ const viewOptions = {
     edges: {
         "default": {
             targetMarker:"PlainArrow",
-            deleteButton:"hover",
+            deleteButton:"hover" as const,
             paintStyle: {
                 stroke: "#94a3b8",
                 strokeWidth: 2,
